@@ -250,6 +250,8 @@ a[target="_blank"]::after{
    for the sidebar to occupy, so the section's own background still paints
    underneath it — the sidebar overlays whatever color is currently in view
    rather than sitting on a background column of its own. */
+.page-toc-sidebar{ display:none; }
+
 @media (min-width:1360px){
   body.has-sidebar-toc .nav-dropdown{ display:none; }
 
@@ -258,6 +260,7 @@ a[target="_blank"]::after{
   }
 
   .page-toc-sidebar{
+    display:block;
     position:sticky;
     top:150px;
     height:0;
